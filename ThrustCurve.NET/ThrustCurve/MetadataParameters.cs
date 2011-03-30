@@ -17,12 +17,12 @@ namespace RocketClubs.ThrustCurve
 {
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2008/MetadataRequest")]
-    [System.Xml.Serialization.XmlRootAttribute("metadata-request", Namespace = "http://www.thrustcurve.org/2008/MetadataRequest", IsNullable = false)]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2008/MetadataRequest")]
+    [XmlRoot("metadata-request", Namespace = "http://www.thrustcurve.org/2008/MetadataRequest", IsNullable = false)]
     public partial class metadatarequest
     {
 
@@ -54,7 +54,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("impulse-class")]
+        [XmlElement("impulse-class")]
         public string impulseclass
         {
             get
@@ -81,7 +81,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool diameterSpecified
         {
             get
@@ -108,7 +108,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        [XmlIgnore()]
         public bool typeSpecified
         {
             get
@@ -122,7 +122,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("cert-org")]
+        [XmlElement("cert-org")]
         public string certorg
         {
             get
@@ -137,9 +137,9 @@ namespace RocketClubs.ThrustCurve
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2008/MetadataRequest")]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2008/MetadataRequest")]
     public enum metadatarequestType
     {
 

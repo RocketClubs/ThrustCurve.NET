@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrustCurve.NET", "ThrustCurve.NET\ThrustCurve.NET.csproj", "{C8FF0927-6E32-4E6D-9262-9930D45088A8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90A63889-F0F2-4388-892F-7B28AC7E984D}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		ThrustCurve.NET.vsmdi = ThrustCurve.NET.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThrustCurve.Test", "ThrustCurve.Test\ThrustCurve.Test.csproj", "{A432D6D5-0ED5-4BFE-A152-9783E95F4028}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ThrustCurve.NET.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -23,6 +35,16 @@ Global
 		{C8FF0927-6E32-4E6D-9262-9930D45088A8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{C8FF0927-6E32-4E6D-9262-9930D45088A8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C8FF0927-6E32-4E6D-9262-9930D45088A8}.Release|x86.ActiveCfg = Release|Any CPU
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Debug|x86.ActiveCfg = Debug|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Debug|x86.Build.0 = Debug|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Release|Any CPU.ActiveCfg = Release|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Release|x86.ActiveCfg = Release|x86
+		{A432D6D5-0ED5-4BFE-A152-9783E95F4028}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

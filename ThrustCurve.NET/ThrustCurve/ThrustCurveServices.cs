@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-using System.Net;
+﻿using System.Net;
 using System.Xml.Serialization;
-using System.Runtime.Serialization;
-using System.Xml;
 
 namespace RocketClubs.ThrustCurve
 {
@@ -21,15 +14,15 @@ namespace RocketClubs.ThrustCurve
             return MakeServiceRequest<SearchResults>(SEARCH_API_URL, parameters);
         }
 
-        public MetadataResults Metadata(MetadataParameters parameters)
-        {
-            return MakeServiceRequest<MetadataResults>(METADATA_API_URL, parameters);
-        }
+        //public MetadataResults Metadata(MetadataParameters parameters)
+        //{
+        //    return MakeServiceRequest<MetadataResults>(METADATA_API_URL, parameters);
+        //}
 
-        public DownloadResults Metadata(DownloadParameters parameters)
-        {
-            return MakeServiceRequest<DownloadResults>(DOWNLOAD_API_URL, parameters);
-        }
+        //public DownloadResults Metadata(DownloadParameters parameters)
+        //{
+        //    return MakeServiceRequest<DownloadResults>(DOWNLOAD_API_URL, parameters);
+        //}
 
         private T MakeServiceRequest<T>(string serviceUrl, object parameters)
         {
@@ -40,8 +33,7 @@ namespace RocketClubs.ThrustCurve
 
             var xmlSerializer = new XmlSerializer(parameters.GetType());
             xmlSerializer.Serialize(serviceRequest.GetRequestStream(), parameters);
-
-           
+            
             HttpWebResponse serviceResponse = serviceRequest.GetResponse() as HttpWebResponse;
             if (serviceResponse.StatusCode == HttpStatusCode.OK)
             {

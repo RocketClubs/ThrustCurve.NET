@@ -1,3 +1,5 @@
 
-/ThrustCurve.NET/bin
-/ThrustCurve.NET/obj
+bin
+bin/**/*
+obj
+obj/**/*

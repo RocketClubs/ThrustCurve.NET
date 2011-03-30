@@ -17,12 +17,12 @@ namespace RocketClubs.ThrustCurve
 {
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
-    [System.Xml.Serialization.XmlRootAttribute("download-response", Namespace = "http://www.thrustcurve.org/2009/DownloadResponse", IsNullable = false)]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
+    [XmlRoot("download-response", Namespace = "http://www.thrustcurve.org/2009/DownloadResponse", IsNullable = false)]
     public partial class downloadresponse
     {
 
@@ -31,7 +31,7 @@ namespace RocketClubs.ThrustCurve
         private string errorField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("result", IsNullable = false)]
+        [XmlArrayItem("result", IsNullable = false)]
         public downloadresponseResult[] results
         {
             get
@@ -59,11 +59,11 @@ namespace RocketClubs.ThrustCurve
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
     public partial class downloadresponseResult
     {
 
@@ -84,7 +84,7 @@ namespace RocketClubs.ThrustCurve
         private string dataurlField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("motor-id", DataType = "integer")]
+        [XmlElement("motor-id", DataType = "integer")]
         public string motorid
         {
             get
@@ -98,7 +98,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("simfile-id", DataType = "integer")]
+        [XmlElement("simfile-id", DataType = "integer")]
         public string simfileid
         {
             get
@@ -151,7 +151,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType = "base64Binary")]
+        [XmlElement(DataType = "base64Binary")]
         public byte[] data
         {
             get
@@ -165,7 +165,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("info-url", DataType = "anyURI")]
+        [XmlElement("info-url", DataType = "anyURI")]
         public string infourl
         {
             get
@@ -179,7 +179,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("data-url", DataType = "anyURI")]
+        [XmlElement("data-url", DataType = "anyURI")]
         public string dataurl
         {
             get
@@ -194,9 +194,9 @@ namespace RocketClubs.ThrustCurve
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
     public enum downloadresponseResultFormat
     {
 
@@ -214,9 +214,9 @@ namespace RocketClubs.ThrustCurve
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
     public enum downloadresponseResultSource
     {
 
@@ -231,9 +231,9 @@ namespace RocketClubs.ThrustCurve
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2009/DownloadResponse")]
     public enum downloadresponseResultLicense
     {
 
@@ -247,7 +247,7 @@ namespace RocketClubs.ThrustCurve
         other,
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlEnumAttribute("")]
+        [XmlEnum("")]
         Item,
     }
 }

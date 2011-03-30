@@ -17,12 +17,12 @@ namespace RocketClubs.ThrustCurve
 {
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2008/MetadataResponse")]
-    [System.Xml.Serialization.XmlRootAttribute("metadata-response", Namespace = "http://www.thrustcurve.org/2008/MetadataResponse", IsNullable = false)]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    [XmlType(AnonymousType = true, Namespace = "http://www.thrustcurve.org/2008/MetadataResponse")]
+    [XmlRoot("metadata-response", Namespace = "http://www.thrustcurve.org/2008/MetadataResponse", IsNullable = false)]
     public partial class metadataresponse
     {
 
@@ -39,7 +39,7 @@ namespace RocketClubs.ThrustCurve
         private string errorField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("manufacturer", IsNullable = false)]
+        [XmlArrayItem("manufacturer", IsNullable = false)]
         public NameAndAbbrev[] manufacturers
         {
             get
@@ -53,8 +53,8 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute("cert-orgs")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("cert-org", IsNullable = false)]
+        [XmlArray("cert-orgs")]
+        [XmlArrayItem("cert-org", IsNullable = false)]
         public NameAndAbbrev[] certorgs
         {
             get
@@ -68,7 +68,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("type", IsNullable = false)]
+        [XmlArrayItem("type", IsNullable = false)]
         public string[] types
         {
             get
@@ -82,7 +82,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("diameter", IsNullable = false)]
+        [XmlArrayItem("diameter", IsNullable = false)]
         public decimal[] diameters
         {
             get
@@ -96,8 +96,8 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute("impulse-classes")]
-        [System.Xml.Serialization.XmlArrayItemAttribute("impulse-class", IsNullable = false)]
+        [XmlArray("impulse-classes")]
+        [XmlArrayItem("impulse-class", IsNullable = false)]
         public string[] impulseclasses
         {
             get
@@ -125,11 +125,11 @@ namespace RocketClubs.ThrustCurve
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.thrustcurve.org/2008/MetadataResponse")]
+    [System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.1")]
+    [System.Serializable()]
+    [System.Diagnostics.DebuggerStepThrough()]
+    [System.ComponentModel.DesignerCategory("code")]
+    [XmlType(Namespace = "http://www.thrustcurve.org/2008/MetadataResponse")]
     public partial class NameAndAbbrev
     {
 
@@ -138,7 +138,7 @@ namespace RocketClubs.ThrustCurve
         private string valueField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttribute()]
         public string abbrev
         {
             get
@@ -152,7 +152,7 @@ namespace RocketClubs.ThrustCurve
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute()]
+        [XmlText()]
         public string Value
         {
             get
