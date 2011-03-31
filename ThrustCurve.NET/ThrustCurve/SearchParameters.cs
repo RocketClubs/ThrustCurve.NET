@@ -29,7 +29,7 @@ namespace RocketClubs.ThrustCurve
         [XmlIgnore()]
         public bool DiameterSpecified { get { return Diameter.HasValue; } }
 
-        [XmlElement(ElementName = "")]
+        [XmlElement(ElementName = "type")]
         public MotorType? MotorType { get; set; }
 
         [XmlIgnore()]

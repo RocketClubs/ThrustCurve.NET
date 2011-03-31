@@ -14,10 +14,10 @@ namespace RocketClubs.ThrustCurve
             return MakeServiceRequest<SearchResults>(SEARCH_API_URL, parameters);
         }
 
-        //public MetadataResults Metadata(MetadataParameters parameters)
-        //{
-        //    return MakeServiceRequest<MetadataResults>(METADATA_API_URL, parameters);
-        //}
+        public MetadataResults Metadata(MetadataParameters parameters)
+        {
+            return MakeServiceRequest<MetadataResults>(METADATA_API_URL, parameters);
+        }
 
         //public DownloadResults Metadata(DownloadParameters parameters)
         //{

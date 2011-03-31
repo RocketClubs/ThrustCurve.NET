@@ -11,12 +11,12 @@ namespace RocketClubs.ThrustCurve.Test
         {
             ThrustCurveServices services = new ThrustCurveServices();
 
-            SearchParameters parameters = new SearchParameters()
+            var parameters = new MetadataParameters()
             {
                 Manufacturer = "AeroTech",
             };
 
-            SearchResults results = services.Search(parameters);
+            var results = services.Metadata(parameters);
 
         }
     }
