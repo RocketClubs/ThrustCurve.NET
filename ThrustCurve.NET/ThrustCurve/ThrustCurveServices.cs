@@ -19,10 +19,10 @@ namespace RocketClubs.ThrustCurve
             return MakeServiceRequest<MetadataResults>(METADATA_API_URL, parameters);
         }
 
-        //public DownloadResults Metadata(DownloadParameters parameters)
-        //{
-        //    return MakeServiceRequest<DownloadResults>(DOWNLOAD_API_URL, parameters);
-        //}
+        public DownloadResults Download(DownloadParameters parameters)
+        {
+            return MakeServiceRequest<DownloadResults>(DOWNLOAD_API_URL, parameters);
+        }
 
         private T MakeServiceRequest<T>(string serviceUrl, object parameters)
         {

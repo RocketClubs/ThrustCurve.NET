@@ -7,17 +7,43 @@ namespace RocketClubs.ThrustCurve.Test
 {
     class Program
     {
+        static ThrustCurveServices services = new ThrustCurveServices();
+
         static void Main(string[] args)
         {
-            ThrustCurveServices services = new ThrustCurveServices();
+            TestSearch();
+            TestMetadata();
+            TestDownload();
+        }
 
+        static void TestDownload()
+        {
+            var parameters = new DownloadParameters()
+            {
+                ThrustCurveId = 33,
+            };
+
+            var results = services.Download(parameters);
+        }
+
+        static void TestSearch()
+        {
+            var parameters = new SearchParameters()
+            {
+                Manufacturer = "Aerotech",
+            };
+
+            var results = services.Search(parameters);
+        }
+
+        static void TestMetadata()
+        {
             var parameters = new MetadataParameters()
             {
-                Manufacturer = "AeroTech",
+                Manufacturer = "Aerotech",
             };
 
             var results = services.Metadata(parameters);
-
         }
     }
 }
